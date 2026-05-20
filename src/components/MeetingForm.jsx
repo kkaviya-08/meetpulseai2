@@ -273,15 +273,24 @@ const MeetingForm = ({ addTask }) => {
 
           </div>
 
+          <div className="slider-box">
+
+          <label>
+          Interruptions :
+          {interruptions}
+          </label>
+
           <input
-            type="number"
-            min="0"
-            placeholder="Meeting Duration (Minutes)"
-            value={duration}
-            onChange={(e) =>
-            setDuration(e.target.value)
-            }
+          type="range"
+          min="0"
+          max="10"
+          value={interruptions}
+          onChange={(e) =>
+          setInterruptions(e.target.value)
+          }
           />
+
+          </div>
 
           <input
             type="number"

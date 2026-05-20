@@ -275,32 +275,40 @@ const MeetingForm = ({ addTask }) => {
 
           <div className="slider-box">
 
-          <label>
-          Interruptions :
-          {interruptions}
-          </label>
+            <label>
+              Interruptions :
+              {interruptions}
+            </label>
 
-          <input
-          type="range"
-          min="0"
-          max="10"
-          value={interruptions}
-          onChange={(e) =>
-          setInterruptions(e.target.value)
-          }
-          />
+            <input
+              type="range"
+              min="0"
+              max="10"
+              placeholder="Interruptions"
+              value={interruptions}
+              onChange={(e) =>
+              setInterruptions(e.target.value)
+              }
+            />
 
           </div>
+          
+          <div className="slider-box">
 
-          <input
-            type="number"
-            placeholder="Meeting Duration (Minutes)"
-            value={duration}
-            onChange={(e) =>
+            <label>
+              Meeting Duration :
+              {duration}
+            </label>
+            <input
+              type="number"
+              placeholder="Meeting Duration (Minutes)"
+              value={duration}
+              onChange={(e) =>
               setDuration(e.target.value)
-            }
-          />
-
+              }
+            />
+        
+          </div>
           <button type="submit">
 
             Analyze Meeting

@@ -2,7 +2,7 @@
   "name": "meetpulseai2",
   "private": true,
   "version": "0.0.0",
-  "homepage": " https://kkaviya-08.github.io/meetpulseai2/",
+  "homepage": " https://kkaviya-08.github.io/meetpulseai2",
   "type": "module",
   "scripts": {
     "dev": "vite",
